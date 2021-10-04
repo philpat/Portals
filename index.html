@@ -13,8 +13,8 @@
    <section class="header">
        <nav>
            <a href="index.html"><img src="./images/logo.png"></a>
-           <div class="nav-links" >
-            <i class="fas fa-times"></i>
+           <div class="nav-links" id="navLinks" >
+            <i class="fas fa-times" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="index.html">home</a></li>
                     <li><a href="about.html">about</a></li>
@@ -23,7 +23,7 @@
                     <li><a href="contact.html">contact</a></li>
                 </ul>
            </div>
-           <i class="fas fa-bars"></i>
+           <i class="fas fa-bars" onclick="showMenu()"></i>
        </nav>
        <div class="text-box">
            <h1>world's biggest university</h1>
@@ -153,7 +153,7 @@
     </section>
 
    <!-- javascript -->
-   <!-- <script>
+   <script>
        var navLinks = document.getElementById("navLinks");
        function showMenu(){
            navLinks.style.right= "0";
@@ -162,6 +162,6 @@
            navLinks.style.right= "-200px";
        }
        
-   </script>  -->
+   </script> 
 </body>
 </html>
